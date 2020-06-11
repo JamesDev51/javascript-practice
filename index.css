@@ -1,0 +1,28 @@
+body {
+  background-color: white;
+}
+
+h1 {
+  color: #fd79a8;
+}
+
+.clicked {
+  color: #a29bfe;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.form,
+.greeting {
+  display: none;
+}
+
+.showing {
+  display: inline-block;
+}
+
+.removename {
+  cursor: pointer;
+}
