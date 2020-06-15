@@ -16,8 +16,12 @@ function getWeather(lat, lng) {
       const place = text.name;
       const temperature = text.main.temp;
       const feels_like = text.main.feels_like;
+      const icon = text.weather[0].icon;
+      const iconImg = new Image();
+      iconImg.src = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+      console.log(iconImg);
 
-      weather.innerText = `지역 : ${place} \n 온도 : ${temperature} \n 체감온도 : ${feels_like}`;
+      weather.innerText = `지역 : ${place} \n 온도 : ${temperature} \n 체감온도 : ${feels_like} \n 날씨 : `;
     });
 }
 
